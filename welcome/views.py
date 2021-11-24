@@ -19,6 +19,10 @@ def index(request):
         'count': PageView.objects.count()
     })
 
+def retrieve(request):
+    html = "<html><head><title></title></head><body>ABC abc 123...</body></html>"
+    return HttpResponse(html)
+
 def health(request):
     """Takes an request as a parameter and gives the count of pageview objects as reponse"""
     return HttpResponse(PageView.objects.count())
