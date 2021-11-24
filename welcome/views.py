@@ -20,7 +20,7 @@ def index(request):
     })
 
 def retrieve(request):
-    html = "<html><head><title></title></head><body>ABC abc 123...</body></html>"
+    html = "<html><head><title></title></head><body>Testing ... ABC abc 123...</body></html>"
     return HttpResponse(html)
 
 def health(request):
